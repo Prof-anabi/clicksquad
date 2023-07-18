@@ -1,0 +1,994 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Root */
+    :root{
+        ---blue:#182d5a;
+        ---black:#222222;
+        ---white:#ffffff;
+        ---orange:#ff6c01;
+        ---yellow:#ff9801;
+        ---lightgray:#ededed;
+    }
+/* Root */
+
+/* Body */
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 0px;
+    background-image: url(../images/back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section{
+    padding: 10px 150px;
+}
+/* Body */
+
+/* All Data Code */
+
+/* Header */
+.header{
+    background-color: transparent;
+}
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .container .logo #header-logo{
+    width: 7.5rem;
+    height: 3rem;
+    
+}
+.header .container .navbar a{
+    font-size: 1rem;
+    color: var(---blue);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+.header .container .navbar.active{
+    right: 0rem;
+    transition: 0s linear;
+}
+.header .container .navbar a:hover{
+    border-bottom: 2px solid var(---orange);
+    color: var(---orange);
+    font-weight: 700;
+}
+.header .container .right-data{
+    display: flex;
+    align-items: center;
+}
+.header .container .right-data .header-two-icon{
+    margin-right: 1.25rem;
+}
+.header .container .right-data .header-two-icon i{
+    font-size: 1rem;
+    background-color: var(---white);
+    padding: 1rem 18px;
+    cursor: pointer;
+    color: var(---blue);
+    border-radius: 0.625rem;
+}
+
+.header .container .right-data .header-two-icon #menu-btn{
+    margin-right: 0.625rem;
+    display: none;
+}
+
+.header .container .navbar .menu-btn{
+    margin-right: 0.625rem;
+    display: none;
+}
+
+.header .container .right-data button{
+    width: 7rem;
+    height: 2.5rem;
+    background: linear-gradient(90deg , var(---orange) , var(---yellow));
+    color: var(---white);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.header .container .right-data button:hover{
+    box-shadow: 2px 2px 2px var(---blue);
+}
+
+
+
+/* Header */
+
+/* Hero Area */
+.hero-area{
+    background-color: transparent;
+}
+.hero-area .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-area .container .hero-text{
+    background-color: transparent;
+}
+.hero-area .container .hero-text h1{
+    background: linear-gradient(90deg , var(---orange) , var(---yellow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 32rem;
+    font-size: 4rem;
+    line-height: 80px;
+}
+.hero-area .container .hero-text p{
+    width: 85%;
+    text-align: justify;
+    font-size: 1 rem;
+    color: var(---blue);
+    font-weight: 500;
+    line-height: 2.5rem;
+    margin: 30px 0px;
+}
+
+.hero-area .container .hero-text button{
+    width: 10rem;
+    height: 2.5rem;
+    background: var(---blue);
+    color: var(---white);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
+}
+   
+.hero-area .container .hero-text button:hover{
+    background: linear-gradient(90deg , var(---orange) , var(---yellow));
+    box-shadow: 2px 2px 2px var(---blue);
+ }
+
+.hero-image {
+    width: 80%;
+}
+/* Hero Area */
+
+/* logo */
+
+.partner-logos h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: var(---blue);
+    line-height: 80px;
+    text-align: center;
+    
+    background: linear-gradient(90deg , var(---orange) , var(---yellow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.partner-logos .slider-container{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* logo */
+
+/* Pages */
+.page{
+    background-color: transparent;
+    margin-top: 100px;
+}
+.page .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page .container .page-text h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(---blue);
+}
+.page .container .page-text h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(---blue);
+    line-height: 80px;
+    background: linear-gradient(90deg , var(---orange) , var(---yellow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.page .container .page-text p{
+    max-width: 32rem;
+    font-size: 1.5rem;
+    color: var(---blue);
+    font-weight: 500;
+    line-height: 40px;
+    margin: 30px auto;
+    text-align: justify;
+}
+.page .container .page-text .two-button button{
+    background: linear-gradient(90deg , var(---orange) , var(---yellow));
+    width: 180px;
+    height: 3rem;
+    border-radius: 10px;
+    color: var(---white);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}  
+.page .container .page-text .two-button .btn{
+    font-size: 16px;
+    color: var(---blue);
+    font-weight: 500;
+    margin-left: 20px;
+}      
+.page .container .page-text .two-button button:hover{
+    box-shadow: 2px 2px 2px var(---blue);
+}  
+/* Pages */
+
+/* offer */
+.offer{
+    margin-top: 100px;
+}
+.offer .heading{
+    text-align: center;
+}
+.offer .heading h3{
+    font-size: 40px;
+    background: linear-gradient(90deg , var(---orange) , var(---yellow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+.offer .slider-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.offer .slider-box .slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(---white);
+    width: 450px;
+    height: 330px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.13);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.offer .slider-box .slider:hover{
+    transform: scale(1.1,1.1);
+    transition: 1s ;
+}
+.offer .slider-box .box .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.offer .slider-box .box .icon i{
+    font-size: 30px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(---lightgray);
+    border-radius: 100px;
+    color: var(---blue);
+}
+.offer .slider-box .box .text h1{
+    font-size: 25px;
+    color: var(---blue);
+    font-weight: 700;
+}
+.offer .slider-box .box p{
+    font-size: 12px;
+    color: var(---black);
+    padding: 1.5rem;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 10px 0px;
+}
+.offer .slider-box .box .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.offer .slider-box .box .button a{
+    font-size: 20px;
+    color: var(---blue);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.offer .slider-box .box .button a:hover{
+    background: linear-gradient(90deg , var(---orange) , var(---yellow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* offer */
+
+/* experience */
+.experience{
+    margin-top: 100px;
+}
+.experience .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.experience .container .left-data h1{
+    font-size: 3rem;
+    background: linear-gradient(90deg , var(---orange) , var(---yellow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 4rem;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.experience .container .left-data p{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(---black);
+    line-height: 40px;
+    margin-top: 30px;
+}
+.experience .container .left-data .one h5{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(---blue);
+}
+.experience .container .left-data .button{
+    margin-top: 40px;
+}
+.experience .container .left-data .button button{
+    background: linear-gradient(90deg , var(---orange) , var(---yellow));
+    width: 180px;
+    height: 3rem;
+    border-radius: 10px;
+    color: var(---white);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}  
+.experience .container .left-data .button .btn{
+    font-size: 16px;
+    color: var(---blue);
+    font-weight: 500;
+    margin-left: 20px;
+}      
+.experience .container .left-data .button button:hover{
+    box-shadow: 2px 2px 2px var(---blue);
+} 
+.experience .container .left-data .all-line{
+    margin-top: 30px;
+}
+.experience .container .left-data .one{
+    margin: 20px 0px;
+}
+.experience .container .left-data .one .text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.experience .container .left-data .one .line{
+    background-color: var(---lightgray);
+    border-radius: 100px;
+    width: 550px;
+    height: 10px;
+    position: relative;
+}
+.experience .container .left-data .one .startline{
+    background: linear-gradient(90deg , var(---orange) , var(---yellow));
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loading 7s linear infinite;
+    width: 0;
+    height: 100%;
+}
+
+.experience .container .left-data .one .line2{
+    background-color: var(---lightgray);
+    border-radius: 100px;
+    width: 550px;
+    height: 10px;
+    position: relative;
+}
+.experience .container .left-data .one .startline2{
+    background: linear-gradient(90deg , var(---orange) , var(---yellow));
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: startline2 10s linear infinite;
+    width: 0;
+    height: 100%;
+}
+.experience .container .left-data .one .line3{
+    background-color: var(---lightgray);
+    border-radius: 100px;
+    width: 550px;
+    height: 10px;
+    position: relative;
+}
+.experience .container .left-data .one .startline3{
+    background: linear-gradient(90deg , var(---orange) , var(---yellow));
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: startline3 10s linear infinite;
+    width: 0;
+    height: 100%;
+}
+@keyframes loading {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+@keyframes startline2 {
+    0% { width: 0; }
+    75% { width: 75%; }
+}
+@keyframes startline3 {
+    0% { width: 0; }
+    50% { width: 50%; }
+}
+/* experience */
+
+/* contact Us */
+.contact {
+    margin-top: 100px;
+}
+.contact .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg,var(---orange),var(---yellow));
+    border-radius: 1.25rem;
+}
+.contact .container .all-data{
+    text-align: center;
+    max-width: 50%;
+}
+.contact .container .all-data h1{
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(---white);
+}
+.contact .container .all-data p{
+    padding: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(---white);
+}
+.contact .container .all-data input{
+    background-color: var(---lightgray);
+    width: 80%;
+    height: 3rem;
+    margin: 0px auto;
+    padding: 1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 1.25rem;
+}
+
+.contact .container .all-data #submit{
+    margin-bottom: 20px;
+    background: var(---blue);
+    color: var(---white);
+}
+
+.contact .container .all-data #submit:hover{
+    background: linear-gradient(90deg , var(---orange) , var(---yellow));
+    outline: 2px solid var(---blue);
+}
+.contact .container .all-data textarea{
+    background-color: var(---lightgray);
+    width: 80%;
+    margin: 0px auto;
+    padding: 1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* contact Us */
+
+/* footer */
+.footer{
+    background-color: var(---black);
+    margin-top: 100px;
+    text-align: center;
+}
+.footer .container{
+    display: inline-block;
+    justify-content: space-between;
+}
+
+
+.footer h2 {
+    color: white;
+    margin: 0;
+    padding: 2rem;
+}
+
+.footer .container img {
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+}
+
+.footer .link {
+    color: var(---lightgray);
+}
+
+/* footer */
+/* All Data Code */
+
+
+
+/* media queries */
+
+
+@media (max-width:1680px) {
+    .experience .container .right-image{
+        width: 700px;
+    }
+    .experience .container .right-image img{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:1536px) {
+    section{
+        padding: 10px 70px;
+    }
+    .hero .container .hero-image{
+        width: 700px;
+    }
+    .hero .container .hero-image img{
+        width: 100%;
+    }
+    .partner-logo .container img{
+        width: 250px;
+    }
+    .page .container .page-image{
+        width: 520px;    }
+    .page .container .page-image img{
+        width: 100%;
+    }
+    .offer .slider-box .slider{
+        width: 380px;
+        height: 330px;
+    }
+    .experience .container .right-image{
+        width: 650px;
+    }
+    .experience .container .right-image img{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media (max-width:1280px) {
+    section{
+        padding: 10px 50px;
+    }
+    .header .container .navbar{
+        background-color: var(---white);
+        border-radius: 0px 10px 10px 0px;
+        position: absolute;
+        top: 15%;
+        width: 100%;
+        right: 100%;
+        padding-left: 50px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.178);
+        
+    }
+    .header .container nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header .container .navbar a{
+        display: block;
+        line-height: 50px;
+        padding: 20px;  
+    }
+    .header .container .navbar a:hover{
+        background-color: var(---lightgray);
+    }
+    .header .container .navbar a:hover{
+        border-right: 3px solid var(---yellow);
+        border-bottom: none;
+        border-top: none;
+        color: var(---orange);
+        font-weight: 700;
+    }
+    .header .container .right-data .header-two-icon #menu-btn{
+        display: initial;
+    }
+    
+    .hero-area .container .hero-text h1{
+        width: 35rem;
+        font-size: 3.5rem;
+    }
+    .hero-area .container .hero-text p{
+        padding: 0;
+        width: 25rem;
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+    
+    .hero-area .container .hero-image img{
+        
+        margin: 0 auto;
+        width: 80%;
+    }  
+   
+    .partner-logos{
+        margin-top: 50px;
+    }
+   
+    .partner-logos .slider-container{
+        display: block;
+    }
+    .partner-logos .slider-container .slide{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+    .page{
+        margin-top: 50px;
+    }
+    .page .container{
+        display: block;
+    }
+    .page .container .page-text{
+        text-align: center;
+    }
+    .page .container .page-image{
+       margin: 0px auto;
+    }
+    .offer .slider-box{
+        display: block;
+    }
+    .offer .slider-box .slider{
+        margin: 20px auto;
+    }
+    .offer{
+        margin-top: 50px;
+    }
+    .offer .heading h3{
+        font-size: 20px;
+    }
+    .experience{
+        margin-top: 50px;
+    }
+    .experience .container{
+        display: block;
+    }
+    .experience .container .right-image{
+        margin: 0px auto;
+    }
+    .experience .container .left-data{
+        text-align: center;
+    }
+    .experience .container .left-data .all-line .one .line{
+        margin: 0px auto;
+    }
+    .experience .container .left-data .all-line .one .line2{
+        margin: 0px auto;
+    }
+    .experience .container .left-data .all-line .one .line3{
+        margin: 0px auto;
+    }
+    .contact{
+        margin-top: 50px;
+    }
+    .footer{
+        margin-top: 50px;
+    }
+    .footer .container{
+        display: block;
+        text-align: center;
+    }
+    .footer .container .link .search-bar{
+        margin: 10px auto;
+    }
+    .footer .last{
+        display: block;
+        padding: 10px 0px;
+        text-align: center;
+    }
+    .footer .last .link{
+        padding: 5px 0px;
+    }
+}
+
+@media (max-width:1020px) {
+    section{
+        padding: 10px 25px;
+    }
+    .header .searchbar{
+        padding: 0px 25px;
+    }
+    .header .container .navbar{
+        padding-left: 25px;
+    }
+
+    .hero-area .container {
+        display: block;
+        align-items: center;
+    }
+   
+    .hero-area .container .hero-text h1{
+        width: 90%;
+        text-align: center;
+        margin: 1rem auto;
+    }
+     .hero-area .container .hero-text p{
+        width: 90%;
+        font-size: 1.5rem;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+    .hero-area .container .hero-text a button{
+        
+        display: block;
+        margin: 1rem auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-area .container .hero-image {
+        display: block;
+        margin: 2rem auto;
+    }
+    .hero-area .container .hero-image img{
+        display: block;
+        margin: 1rem auto;
+        width: 90%;
+    } 
+}
+
+@media (max-width:768px) {
+    section{
+        padding: 10px 16px;
+    }
+    .header .container .navbar{
+        padding-left: 16px;
+    }
+    .hero-area .container .hero-text h1{
+        margin-inline: 0;
+        width: 100%;
+    }
+    .hero-area .container .hero-text p{
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 1rem;
+        margin: 2rem auto;
+    }
+    .hero-area .container .hero-image {
+        display: block;
+        margin: 2rem auto;
+    }
+    .hero-area .container .hero-image img{
+        display: block;
+        margin: 1rem auto;
+        width: 90%;
+    }
+    .page .container .page-text h3{
+        font-size: 2rem;
+    }
+    .page .container .page-text h1{
+        font-size: 3rem;
+        line-height: 60px;
+    }
+    .page .container .page-text p{
+        font-size: 1.5rem;
+        margin: 1rem auto;
+    }
+
+    .experience .container .left-data p {
+        font-size: 1.5rem;
+    }
+    .contact .container {
+        display: flex;
+        height: 100%;
+    }
+    .contact .container .all-data {
+        margin: 2rem auto;
+        max-width: 80%;
+        height: 100%;
+    }
+
+    .contact .container .all-data p {
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media (max-width:640px) {
+    section{
+        padding: 10px 10px;
+    }
+    .header .container .right-data button{
+        display: none;
+    }
+    .header .container .right-data .header-two-icon i{
+        font-size: 14px;
+        background-color: var(---white);
+        padding: 12px 12px;
+    }
+    .header .container .navbar{
+        padding-left: 5px;
+    }
+
+    .header .container .navbar #mobile-signup{
+        display: initial;
+    }
+    .hero-area .container .hero-text h1{
+        font-size: 3rem;
+    }
+    .hero-area .container .hero-text p{
+        margin: 15px auto;
+        font-size: 14px;
+        line-height: 40px;
+        padding: 1rem;
+    }
+    .hero-area .container .hero-image {
+        align-items: center;
+        justify-content: center;
+        margin: 2rem auto;
+    }
+    .partner-logos h1 {
+        font-size: 3rem;
+    }
+    .page .container .page-text h2{
+        font-size: 2rem;
+    }
+    .page .container .page-image{
+        width: 90%;
+    }
+    .page .container .page-image img{
+        width: 100%;
+    }
+    .experience .container .left-data h1 {
+        font-size: 2rem;
+    }
+    .experience .container .left-data .one .line{
+        background-color: var(---lightgray);
+        border-radius: 100px;
+        width: 90%;
+        height: 10px;
+        position: relative;
+    }
+    .experience .container .left-data .one .line2{
+        background-color: var(---lightgray);
+        border-radius: 100px;
+        width: 90%;
+        height: 10px;
+        position: relative;
+    }
+    .experience .container .left-data .one .line3{
+        background-color: var(---lightgray);
+        border-radius: 100px;
+        width: 90%;
+        height: 10px;
+        position: relative;
+    }
+    .experience .container .right-image{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .experience .container .right-image img{
+        width: 100%;
+    }
+   
+    .contact .container .all-data{
+        max-width: 100%;
+    }
+
+    .contact .container .all-data h1{
+        font-size: 2rem;
+    } 
+    .contact .container .all-data p{
+        font-size: 1rem;
+        line-height: 40px;
+        margin: 15px 0px;
+    }
+}
+
+@media (max-width:400px) {
+    .header .container .logo{
+        width: 150px;
+    }
+    .header .container .logo img{
+        width: 100%;
+    }
+    .header .container .navbar{
+        padding-left: 2px;
+    }
+    .header .container .right-data .header-two-icon{
+        margin-right: 2px;
+    }
+    .hero-area .container .hero-text h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .hero-area .container .hero-text p{
+        padding: 1rem;
+    }
+    .hero-area .container .hero-text .searchbar .input #search-btn{
+        width: 100px;
+        height: 60px;
+    }
+    .partner-logos h1{
+        font-size: 2.5rem;
+    }
+    .page .container .page-text h2{
+        margin-top: 3rem;
+        font-size: 2rem;
+    }
+    .page .container .page-text .two-button .btn{
+        display: none;
+    }
+    .offer .slider-box .slider{
+        width: 95%;
+        height: 380px;
+    }
+    .offer .heading h1{
+        line-height: 50px;
+        font-size: 40px;
+    }
+    .offer .slider-box .box p{
+        font-size: 10px;
+    }
+    .offer .slider-box{
+        margin-top: 30px;
+    }
+    
+    .experience .container .left-data p{
+        margin-top: 15px;
+        font-size: 1rem;
+    }
+    .experience .container .left-data .button a{
+        display: none;
+    }
+    /* .contact .container{
+        height: 440px;
+    } */
+    .contact .container .all-data{
+        max-width: 100%;
+    }
+
+    .contact .container .all-data h1{
+        font-size: 2rem;
+    }
+}
+/* media queries */
